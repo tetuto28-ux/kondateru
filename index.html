@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>こんだてーる</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #f0faf0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+    .logo {
+      font-size: 48px;
+      margin-bottom: 8px;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 700;
+      color: #2d6a2d;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 28px 24px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      margin-bottom: 16px;
+      text-align: left;
+    }
+    .card-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #2d6a2d;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+    .card p {
+      font-size: 15px;
+      color: #333;
+      line-height: 1.7;
+    }
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      background: #2d6a2d;
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-size: 17px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 24px;
+      text-decoration: none;
+      text-align: center;
+    }
+    .btn:hover {
+      background: #245224;
+    }
+    .tag-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+    }
+    .tag {
+      background: #e8f5e8;
+      color: #2d6a2d;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .footer {
+      margin-top: 32px;
+      font-size: 11px;
+      color: #aaa;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">🥗</div>
+    <h1>こんだてーる</h1>
+    <p class="subtitle">
+      食材を選ぶだけで<br>
+      1週間分の減塩・作り置き献立を自動生成
+    </p>
+
+    <div class="card">
+      <div class="card-title">✨ こんなお悩みを解決します</div>
+      <p>毎日の献立を考えるのが面倒、減塩を続けたいけどレシピが続かない、週末にまとめて作り置きしたい。</p>
+      <div class="tag-row">
+        <span class="tag">🧂 減塩</span>
+        <span class="tag">❄️ 作り置き</span>
+        <span class="tag">📅 1週間分</span>
+        <span class="tag">🛒 買い物リスト</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">🚀 使い方は3ステップ</div>
+      <p>① 好きな食材を選ぶ<br>② 塩分目標と予算を設定<br>③ 1週間の献立が完成！</p>
+    </div>
+
+    <a class="btn" href="#">献立を作りはじめる →</a>
+
+    <p class="footer">
+      ※ 本アプリは一般的な健康情報の提供を目的としています。<br>
+      疾患をお持ちの方は医師にご相談ください。
+    </p>
+  </div>
+</body>
+</html>
