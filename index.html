@@ -19,8 +19,6 @@
       align-items: center;
       min-height: 100vh;
     }
-
-    /* ===== 共通 ===== */
     .container { max-width: 400px; width: 100%; }
     .btn-primary {
       display: block; width: 100%;
@@ -29,11 +27,8 @@
       border: none; border-radius: 12px;
       font-size: 17px; font-weight: 700;
       cursor: pointer; margin-top: 24px;
-      text-align: center;
     }
-    .btn-primary:disabled {
-      background: #aaa; cursor: not-allowed;
-    }
+    .btn-primary:disabled { background: #aaa; cursor: not-allowed; }
     .btn-secondary {
       display: block; width: 100%;
       padding: 14px;
@@ -41,168 +36,91 @@
       border: 2px solid #2d6a2d; border-radius: 12px;
       font-size: 15px; font-weight: 700;
       cursor: pointer; margin-top: 12px;
-      text-align: center;
     }
 
-    /* ===== ホーム画面 ===== */
+    /* ホーム */
     #home { padding-top: 20px; }
     .logo { font-size: 48px; text-align: center; margin-bottom: 8px; }
-    h1 {
-      font-size: 32px; font-weight: 700;
-      color: #2d6a2d; text-align: center; margin-bottom: 8px;
-    }
-    .subtitle {
-      font-size: 14px; color: #666;
-      text-align: center; margin-bottom: 32px; line-height: 1.6;
-    }
-    .card {
-      background: white; border-radius: 16px;
-      padding: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-      margin-bottom: 14px;
-    }
-    .card-title {
-      font-size: 13px; font-weight: 700;
-      color: #2d6a2d; margin-bottom: 10px;
-    }
+    h1 { font-size: 32px; font-weight: 700; color: #2d6a2d; text-align: center; margin-bottom: 8px; }
+    .subtitle { font-size: 14px; color: #666; text-align: center; margin-bottom: 32px; line-height: 1.6; }
+    .card { background: white; border-radius: 16px; padding: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 14px; }
+    .card-title { font-size: 13px; font-weight: 700; color: #2d6a2d; margin-bottom: 10px; }
     .card p { font-size: 14px; color: #333; line-height: 1.7; }
     .tag-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
-    .tag {
-      background: #e8f5e8; color: #2d6a2d;
-      padding: 4px 12px; border-radius: 20px;
-      font-size: 12px; font-weight: 600;
-    }
-    .footer-note {
-      margin-top: 24px; font-size: 11px;
-      color: #aaa; text-align: center; line-height: 1.6;
-    }
+    .tag { background: #e8f5e8; color: #2d6a2d; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 600; }
+    .footer-note { margin-top: 24px; font-size: 11px; color: #aaa; text-align: center; line-height: 1.6; }
 
-    /* ===== 食材選択画面 ===== */
+    /* 食材選択 */
     #select { padding-top: 20px; }
-    .page-header {
-      display: flex; align-items: center;
-      gap: 12px; margin-bottom: 6px; width: 100%;
-    }
-    .back-btn {
-      background: none; border: none;
-      font-size: 22px; cursor: pointer; color: #2d6a2d;
-    }
-    .page-title {
-      font-size: 20px; font-weight: 700; color: #2b2a1e;
-    }
-    .step-label {
-      font-size: 12px; color: #888; margin-bottom: 18px;
-    }
-    .select-hint {
-      font-size: 13px; color: #555;
-      background: #e8f5e8; border-radius: 10px;
-      padding: 10px 14px; margin-bottom: 18px; line-height: 1.6;
-    }
-    .category-label {
-      font-size: 12px; font-weight: 700;
-      color: #2d6a2d; letter-spacing: 0.1em;
-      margin: 16px 0 8px;
-    }
-    .ingredient-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 8px;
-      margin-bottom: 4px;
-    }
-    .ingredient-btn {
-      background: white;
-      border: 2px solid #ddd;
-      border-radius: 12px;
-      padding: 12px 6px;
-      text-align: center;
-      cursor: pointer;
-      transition: all 0.15s;
-      font-family: inherit;
-    }
-    .ingredient-btn:hover { border-color: #2d6a2d; }
-    .ingredient-btn.selected {
-      background: #e8f5e8;
-      border-color: #2d6a2d;
-      box-shadow: 0 0 0 2px #2d6a2d22;
-    }
+    .page-header { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; width: 100%; }
+    .back-btn { background: none; border: none; font-size: 22px; cursor: pointer; color: #2d6a2d; }
+    .page-title { font-size: 20px; font-weight: 700; color: #2b2a1e; }
+    .step-label { font-size: 12px; color: #888; margin-bottom: 18px; }
+    .select-hint { font-size: 13px; color: #555; background: #e8f5e8; border-radius: 10px; padding: 10px 14px; margin-bottom: 18px; line-height: 1.6; }
+    .category-label { font-size: 12px; font-weight: 700; color: #2d6a2d; letter-spacing: 0.1em; margin: 16px 0 8px; }
+    .ingredient-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 4px; }
+    .ingredient-btn { background: white; border: 2px solid #ddd; border-radius: 12px; padding: 12px 6px; text-align: center; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .ingredient-btn.selected { background: #e8f5e8; border-color: #2d6a2d; }
     .ingredient-btn .ing-icon { font-size: 24px; display: block; margin-bottom: 4px; }
     .ingredient-btn .ing-name { font-size: 12px; font-weight: 600; color: #333; }
     .ingredient-btn.selected .ing-name { color: #2d6a2d; }
-    .selected-count {
-      text-align: center; font-size: 13px;
-      color: #2d6a2d; font-weight: 700;
-      margin-top: 8px; min-height: 20px;
-    }
+    .selected-count { text-align: center; font-size: 13px; color: #2d6a2d; font-weight: 700; margin-top: 8px; min-height: 20px; }
 
-    /* ===== 条件設定画面 ===== */
+    /* 条件設定 */
     #settings { padding-top: 20px; }
     .setting-section { margin-bottom: 24px; }
-    .setting-title {
-      font-size: 15px; font-weight: 700;
-      color: #2b2a1e; margin-bottom: 12px;
-    }
-    .option-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 8px;
-    }
-    .option-btn {
-      background: white;
-      border: 2px solid #ddd;
-      border-radius: 12px;
-      padding: 14px 10px;
-      text-align: center;
-      cursor: pointer;
-      font-family: inherit;
-      transition: all 0.15s;
-    }
-    .option-btn.selected {
-      background: #e8f5e8;
-      border-color: #2d6a2d;
-    }
+    .setting-title { font-size: 15px; font-weight: 700; color: #2b2a1e; margin-bottom: 12px; }
+    .option-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .option-btn { background: white; border: 2px solid #ddd; border-radius: 12px; padding: 14px 10px; text-align: center; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    .option-btn.selected { background: #e8f5e8; border-color: #2d6a2d; }
     .option-btn .opt-icon { font-size: 22px; display: block; margin-bottom: 4px; }
     .option-btn .opt-label { font-size: 13px; font-weight: 700; color: #333; }
     .option-btn .opt-sub { font-size: 11px; color: #888; margin-top: 2px; }
     .option-btn.selected .opt-label { color: #2d6a2d; }
 
-    /* ===== 生成中画面 ===== */
-    #generating {
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    .generating-icon {
-      font-size: 64px; margin-bottom: 24px;
-      animation: bounce 1s infinite;
-    }
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-12px); }
-    }
-    .generating-title {
-      font-size: 22px; font-weight: 700;
-      color: #2d6a2d; margin-bottom: 12px;
-    }
-    .generating-sub {
-      font-size: 14px; color: #666; line-height: 1.7;
-    }
-    .dots span {
-      animation: dot 1.4s infinite;
-      font-size: 24px; color: #2d6a2d;
-    }
-    .dots span:nth-child(2) { animation-delay: 0.2s; }
-    .dots span:nth-child(3) { animation-delay: 0.4s; }
+    /* 生成中 */
+    #generating { justify-content: center; align-items: center; text-align: center; }
+    .generating-icon { font-size: 64px; margin-bottom: 24px; animation: bounce 1s infinite; }
+    @keyframes bounce { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+    .generating-title { font-size: 22px; font-weight: 700; color: #2d6a2d; margin-bottom: 12px; }
+    .generating-sub { font-size: 14px; color: #666; line-height: 1.7; }
+    .dots span { animation: dot 1.4s infinite; font-size: 24px; color: #2d6a2d; }
+    .dots span:nth-child(2){animation-delay:.2s} .dots span:nth-child(3){animation-delay:.4s}
     @keyframes dot { 0%,80%,100%{opacity:0} 40%{opacity:1} }
+
+    /* 献立表示 */
+    #result { padding-top: 20px; }
+    .result-header { text-align: center; margin-bottom: 20px; }
+    .result-title { font-size: 22px; font-weight: 700; color: #2d6a2d; margin-bottom: 6px; }
+    .result-sub { font-size: 13px; color: #666; line-height: 1.6; }
+    .week-grid { display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; }
+    .day-card { background: white; border-radius: 14px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .day-header { background: #2d6a2d; color: white; padding: 10px 16px; display: flex; justify-content: space-between; align-items: center; }
+    .day-name { font-size: 14px; font-weight: 700; }
+    .day-salt { font-size: 11px; background: rgba(255,255,255,0.2); padding: 2px 8px; border-radius: 10px; }
+    .meals { padding: 12px 16px; display: flex; flex-direction: column; gap: 8px; }
+    .meal-row { display: flex; gap: 10px; align-items: flex-start; }
+    .meal-label { font-size: 11px; font-weight: 700; color: #888; width: 28px; flex-shrink: 0; padding-top: 2px; }
+    .meal-content { flex: 1; }
+    .meal-name { font-size: 14px; font-weight: 600; color: #2b2a1e; }
+    .meal-note { font-size: 11px; color: #888; margin-top: 2px; }
+    .shopping-card { background: white; border-radius: 14px; padding: 18px; box-shadow: 0 2px 12px rgba(0,0,0,0.06); margin-bottom: 16px; }
+    .shopping-title { font-size: 15px; font-weight: 700; color: #2d6a2d; margin-bottom: 12px; }
+    .shopping-category { font-size: 12px; font-weight: 700; color: #888; margin: 10px 0 6px; }
+    .shopping-items { display: flex; flex-wrap: wrap; gap: 6px; }
+    .shopping-item { background: #f0faf0; border: 1px solid #c8e6c8; color: #2d6a2d; padding: 4px 10px; border-radius: 16px; font-size: 12px; }
+    .safety-note { background: #fff8e1; border-left: 4px solid #ffc107; border-radius: 8px; padding: 12px 14px; margin-bottom: 16px; font-size: 12px; color: #666; line-height: 1.6; }
+    .retry-btn { background: #f0faf0; border: 2px solid #2d6a2d; color: #2d6a2d; border-radius: 12px; padding: 12px; font-size: 14px; font-weight: 700; cursor: pointer; width: 100%; margin-top: 8px; }
   </style>
 </head>
 <body>
 
-<!-- ===== ホーム画面 ===== -->
+<!-- ホーム画面 -->
 <div id="home" class="screen active">
   <div class="container">
     <div class="logo">🥗</div>
     <h1>こんだてーる</h1>
     <p class="subtitle">食材を選ぶだけで<br>1週間分の減塩・作り置き献立を自動生成</p>
-
     <div class="card">
       <div class="card-title">✨ こんなお悩みを解決します</div>
       <p>毎日の献立を考えるのが面倒、減塩を続けたいけどレシピが続かない、週末にまとめて作り置きしたい。</p>
@@ -213,22 +131,16 @@
         <span class="tag">🛒 買い物リスト</span>
       </div>
     </div>
-
     <div class="card">
       <div class="card-title">🚀 使い方は3ステップ</div>
       <p>① 好きな食材を選ぶ<br>② 塩分目標と予算を設定<br>③ 1週間の献立が完成！</p>
     </div>
-
     <button class="btn-primary" onclick="showScreen('select')">献立を作りはじめる →</button>
-
-    <p class="footer-note">
-      ※ 本アプリは一般的な健康情報の提供を目的としています。<br>
-      疾患をお持ちの方は医師にご相談ください。
-    </p>
+    <p class="footer-note">※ 本アプリは一般的な健康情報の提供を目的としています。<br>疾患をお持ちの方は医師にご相談ください。</p>
   </div>
 </div>
 
-<!-- ===== 食材選択画面 ===== -->
+<!-- 食材選択画面 -->
 <div id="select" class="screen">
   <div class="container">
     <div class="page-header">
@@ -236,112 +148,49 @@
       <div class="page-title">食材を選ぶ</div>
     </div>
     <div class="step-label">STEP 1 / 3</div>
-
-    <div class="select-hint">
-      🥩 メインに使いたい食材を <strong>2〜3つ</strong> 選んでください。<br>
-      選んだ食材を中心に1週間の献立を作ります。
-    </div>
+    <div class="select-hint">🥩 メインに使いたい食材を <strong>2〜3つ</strong> 選んでください。</div>
 
     <div class="category-label">🐔 肉類</div>
     <div class="ingredient-grid">
-      <button class="ingredient-btn" onclick="toggleIngredient(this, '鶏むね肉')">
-        <span class="ing-icon">🍗</span>
-        <span class="ing-name">鶏むね肉</span>
-      </button>
-      <button class="ingredient-btn" onclick="toggleIngredient(this, '鶏もも肉')">
-        <span class="ing-icon">🍗</span>
-        <span class="ing-name">鶏もも肉</span>
-      </button>
-      <button class="ingredient-btn" onclick="toggleIngredient(this, '豚こま肉')">
-        <span class="ing-icon">🥩</span>
-        <span class="ing-name">豚こま肉</span>
-      </button>
-      <button class="ingredient-btn" onclick="toggleIngredient(this, '豚ロース')">
-        <span class="ing-icon">🥩</span>
-        <span class="ing-name">豚ロース</span>
-      </button>
-      <button class="ingredient-btn" onclick="toggleIngredient(this, '牛薄切り')">
-        <span class="ing-icon">🥩</span>
-        <span class="ing-name">牛薄切り</span>
-      </button>
+      <button class="ingredient-btn" onclick="toggleIngredient(this,'鶏むね肉')"><span class="ing-icon">🍗</span><span class="ing-name">鶏むね肉</span></button>
+      <button class="ingredient-btn" onclick="toggleIngredient(this,'鶏もも肉')"><span class="ing-icon">🍗</span><span class="ing-name">鶏もも肉</span></button>
+      <button class="ingredient-btn" onclick="toggleIngredient(this,'豚こま肉')"><span class="ing-icon">🥩</span><span class="ing-name">豚こま肉</span></button>
+      <button class="ingredient-btn" onclick="toggleIngredient(this,'豚ロース')"><span class="ing-icon">🥩</span><span class="ing-name">豚ロース</span></button>
+      <button class="ingredient-btn" onclick="toggleIngredient(this,'牛薄切り')"><span class="ing-icon">🥩</span><span class="ing-name">牛薄切り</span></button>
     </div>
 
     <div class="category-label">🐟 魚・海産物</div>
     <div class="ingredient-grid">
-      <button class="ingredient-btn" onclick="toggleIngredient(this, '鮭')">
-        <span class="ing-icon">🐟</span>
-        <span class="ing-name">鮭</span>
-      </button>
-      <button class="ingredient-btn" onclick="toggleIngredient(this, 'さば缶')">
-        <span class="ing-icon">🐟</span>
-        <span class="ing-name">さば缶</span>
-      </button>
-      <button class="ingredient-btn" onclick="toggleIngredient(this, 'ツナ缶')">
-        <span class="ing-icon">🐡</span>
-        <span class="ing-name">ツナ缶</span>
-      </button>
-      <button class="ingredient-btn" onclick="toggleIngredient(this, 'えび')">
-        <span class="ing-icon">🦐</span>
-        <span class="ing-name">えび</span>
-      </button>
+      <button class="ingredient-btn" onclick="toggleIngredient(this,'鮭')"><span class="ing-icon">🐟</span><span class="ing-name">鮭</span></button>
+      <button class="ingredient-btn" onclick="toggleIngredient(this,'さば缶')"><span class="ing-icon">🐟</span><span class="ing-name">さば缶</span></button>
+      <button class="ingredient-btn" onclick="toggleIngredient(this,'ツナ缶')"><span class="ing-icon">🐡</span><span class="ing-name">ツナ缶</span></button>
+      <button class="ingredient-btn" onclick="toggleIngredient(this,'えび')"><span class="ing-icon">🦐</span><span class="ing-name">えび</span></button>
     </div>
 
     <div class="category-label">🌱 豆・卵</div>
     <div class="ingredient-grid">
-      <button class="ingredient-btn" onclick="toggleIngredient(this, '卵')">
-        <span class="ing-icon">🥚</span>
-        <span class="ing-name">卵</span>
-      </button>
-      <button class="ingredient-btn" onclick="toggleIngredient(this, '豆腐')">
-        <span class="ing-icon">⬜</span>
-        <span class="ing-name">豆腐</span>
-      </button>
-      <button class="ingredient-btn" onclick="toggleIngredient(this, '大豆')">
-        <span class="ing-icon">🫘</span>
-        <span class="ing-name">大豆</span>
-      </button>
-      <button class="ingredient-btn" onclick="toggleIngredient(this, '納豆')">
-        <span class="ing-icon">🫘</span>
-        <span class="ing-name">納豆</span>
-      </button>
+      <button class="ingredient-btn" onclick="toggleIngredient(this,'卵')"><span class="ing-icon">🥚</span><span class="ing-name">卵</span></button>
+      <button class="ingredient-btn" onclick="toggleIngredient(this,'豆腐')"><span class="ing-icon">⬜</span><span class="ing-name">豆腐</span></button>
+      <button class="ingredient-btn" onclick="toggleIngredient(this,'大豆')"><span class="ing-icon">🫘</span><span class="ing-name">大豆</span></button>
+      <button class="ingredient-btn" onclick="toggleIngredient(this,'納豆')"><span class="ing-icon">🫘</span><span class="ing-name">納豆</span></button>
     </div>
 
     <div class="category-label">🥦 野菜</div>
     <div class="ingredient-grid">
-      <button class="ingredient-btn" onclick="toggleIngredient(this, 'ブロッコリー')">
-        <span class="ing-icon">🥦</span>
-        <span class="ing-name">ブロッコリー</span>
-      </button>
-      <button class="ingredient-btn" onclick="toggleIngredient(this, 'キャベツ')">
-        <span class="ing-icon">🥬</span>
-        <span class="ing-name">キャベツ</span>
-      </button>
-      <button class="ingredient-btn" onclick="toggleIngredient(this, '玉ねぎ')">
-        <span class="ing-icon">🧅</span>
-        <span class="ing-name">玉ねぎ</span>
-      </button>
-      <button class="ingredient-btn" onclick="toggleIngredient(this, 'にんじん')">
-        <span class="ing-icon">🥕</span>
-        <span class="ing-name">にんじん</span>
-      </button>
-      <button class="ingredient-btn" onclick="toggleIngredient(this, 'ほうれん草')">
-        <span class="ing-icon">🌿</span>
-        <span class="ing-name">ほうれん草</span>
-      </button>
-      <button class="ingredient-btn" onclick="toggleIngredient(this, 'トマト')">
-        <span class="ing-icon">🍅</span>
-        <span class="ing-name">トマト</span>
-      </button>
+      <button class="ingredient-btn" onclick="toggleIngredient(this,'ブロッコリー')"><span class="ing-icon">🥦</span><span class="ing-name">ブロッコリー</span></button>
+      <button class="ingredient-btn" onclick="toggleIngredient(this,'キャベツ')"><span class="ing-icon">🥬</span><span class="ing-name">キャベツ</span></button>
+      <button class="ingredient-btn" onclick="toggleIngredient(this,'玉ねぎ')"><span class="ing-icon">🧅</span><span class="ing-name">玉ねぎ</span></button>
+      <button class="ingredient-btn" onclick="toggleIngredient(this,'にんじん')"><span class="ing-icon">🥕</span><span class="ing-name">にんじん</span></button>
+      <button class="ingredient-btn" onclick="toggleIngredient(this,'ほうれん草')"><span class="ing-icon">🌿</span><span class="ing-name">ほうれん草</span></button>
+      <button class="ingredient-btn" onclick="toggleIngredient(this,'トマト')"><span class="ing-icon">🍅</span><span class="ing-name">トマト</span></button>
     </div>
 
     <div class="selected-count" id="selectedCount">食材を2〜3つ選んでください</div>
-    <button class="btn-primary" id="nextBtn" onclick="showScreen('settings')" disabled>
-      次へ：条件を設定する →
-    </button>
+    <button class="btn-primary" id="nextBtn" onclick="showScreen('settings')" disabled>次へ：条件を設定する →</button>
   </div>
 </div>
 
-<!-- ===== 条件設定画面 ===== -->
+<!-- 条件設定画面 -->
 <div id="settings" class="screen">
   <div class="container">
     <div class="page-header">
@@ -353,107 +202,81 @@
     <div class="setting-section">
       <div class="setting-title">🧂 1日の塩分目標</div>
       <div class="option-grid">
-        <button class="option-btn selected" onclick="selectOption(this, 'salt')" data-value="6g未満">
-          <span class="opt-icon">💊</span>
-          <span class="opt-label">6g未満</span>
-          <span class="opt-sub">高血圧の方向け</span>
-        </button>
-        <button class="option-btn" onclick="selectOption(this, 'salt')" data-value="7g未満">
-          <span class="opt-icon">🧂</span>
-          <span class="opt-label">7g未満</span>
-          <span class="opt-sub">健康維持向け</span>
-        </button>
-        <button class="option-btn" onclick="selectOption(this, 'salt')" data-value="8g未満">
-          <span class="opt-icon">🍽️</span>
-          <span class="opt-label">8g未満</span>
-          <span class="opt-sub">ゆるめ減塩</span>
-        </button>
+        <button class="option-btn selected" onclick="selectOption(this,'salt')" data-value="6g未満"><span class="opt-icon">💊</span><span class="opt-label">6g未満</span><span class="opt-sub">高血圧の方向け</span></button>
+        <button class="option-btn" onclick="selectOption(this,'salt')" data-value="7g未満"><span class="opt-icon">🧂</span><span class="opt-label">7g未満</span><span class="opt-sub">健康維持向け</span></button>
+        <button class="option-btn" onclick="selectOption(this,'salt')" data-value="8g未満"><span class="opt-icon">🍽️</span><span class="opt-label">8g未満</span><span class="opt-sub">ゆるめ減塩</span></button>
       </div>
     </div>
 
     <div class="setting-section">
-      <div class="setting-title">⏰ 週末の調理時間（目安）</div>
+      <div class="setting-title">⏰ 週末の調理時間</div>
       <div class="option-grid">
-        <button class="option-btn" onclick="selectOption(this, 'time')" data-value="1時間以内">
-          <span class="opt-icon">⚡</span>
-          <span class="opt-label">1時間以内</span>
-          <span class="opt-sub">超時短派</span>
-        </button>
-        <button class="option-btn selected" onclick="selectOption(this, 'time')" data-value="2時間以内">
-          <span class="opt-icon">🕑</span>
-          <span class="opt-label">2時間以内</span>
-          <span class="opt-sub">ちょうどいい</span>
-        </button>
-        <button class="option-btn" onclick="selectOption(this, 'time')" data-value="3時間以内">
-          <span class="opt-icon">👨‍🍳</span>
-          <span class="opt-label">3時間以内</span>
-          <span class="opt-sub">じっくり派</span>
-        </button>
+        <button class="option-btn" onclick="selectOption(this,'time')" data-value="1時間以内"><span class="opt-icon">⚡</span><span class="opt-label">1時間以内</span><span class="opt-sub">超時短派</span></button>
+        <button class="option-btn selected" onclick="selectOption(this,'time')" data-value="2時間以内"><span class="opt-icon">🕑</span><span class="opt-label">2時間以内</span><span class="opt-sub">ちょうどいい</span></button>
+        <button class="option-btn" onclick="selectOption(this,'time')" data-value="3時間以内"><span class="opt-icon">👨‍🍳</span><span class="opt-label">3時間以内</span><span class="opt-sub">じっくり派</span></button>
       </div>
     </div>
 
     <div class="setting-section">
-      <div class="setting-title">💰 1週間の食費（目安）</div>
+      <div class="setting-title">💰 1週間の食費</div>
       <div class="option-grid">
-        <button class="option-btn" onclick="selectOption(this, 'budget')" data-value="節約（〜5,000円）">
-          <span class="opt-icon">🪙</span>
-          <span class="opt-label">節約派</span>
-          <span class="opt-sub">〜5,000円</span>
-        </button>
-        <button class="option-btn selected" onclick="selectOption(this, 'budget')" data-value="普通（5,000〜8,000円）">
-          <span class="opt-icon">💴</span>
-          <span class="opt-label">ふつう</span>
-          <span class="opt-sub">5,000〜8,000円</span>
-        </button>
-        <button class="option-btn" onclick="selectOption(this, 'budget')" data-value="こだわり（8,000円〜）">
-          <span class="opt-icon">⭐</span>
-          <span class="opt-label">こだわり派</span>
-          <span class="opt-sub">8,000円〜</span>
-        </button>
+        <button class="option-btn" onclick="selectOption(this,'budget')" data-value="節約（〜5,000円）"><span class="opt-icon">🪙</span><span class="opt-label">節約派</span><span class="opt-sub">〜5,000円</span></button>
+        <button class="option-btn selected" onclick="selectOption(this,'budget')" data-value="普通（5,000〜8,000円）"><span class="opt-icon">💴</span><span class="opt-label">ふつう</span><span class="opt-sub">5,000〜8,000円</span></button>
+        <button class="option-btn" onclick="selectOption(this,'budget')" data-value="こだわり（8,000円〜）"><span class="opt-icon">⭐</span><span class="opt-label">こだわり派</span><span class="opt-sub">8,000円〜</span></button>
       </div>
     </div>
 
-    <button class="btn-primary" onclick="startGenerating()">
-      献立を生成する 🍳
-    </button>
+    <button class="btn-primary" onclick="startGenerating()">献立を生成する 🍳</button>
     <button class="btn-secondary" onclick="showScreen('select')">← 食材を選び直す</button>
   </div>
 </div>
 
-<!-- ===== 生成中画面 ===== -->
+<!-- 生成中画面 -->
 <div id="generating" class="screen">
   <div>
     <div class="generating-icon">🍳</div>
     <div class="generating-title">献立を作っています</div>
-    <div class="generating-sub">
-      選んだ食材と条件をもとに<br>
-      1週間分の減塩レシピを考え中
+    <div class="generating-sub">選んだ食材と条件をもとに<br>1週間分の減塩レシピを考え中</div>
+    <div class="dots" style="margin-top:16px;"><span>●</span><span>●</span><span>●</span></div>
+  </div>
+</div>
+
+<!-- 献立表示画面 -->
+<div id="result" class="screen">
+  <div class="container">
+    <div class="result-header">
+      <div class="result-title">🎉 1週間の献立ができました！</div>
+      <div class="result-sub" id="resultSub"></div>
     </div>
-    <div class="dots" style="margin-top:16px;">
-      <span>●</span><span>●</span><span>●</span>
+
+    <div class="week-grid" id="weekGrid"></div>
+
+    <div class="shopping-card">
+      <div class="shopping-title">🛒 買い物リスト</div>
+      <div id="shoppingList"></div>
     </div>
+
+    <div class="safety-note">
+      ⚠️ 本アプリは一般的な健康情報の提供を目的としています。
+      高血圧・糖尿病・腎臓病などの疾患をお持ちの方は、
+      必ず担当医にご相談ください。
+    </div>
+
+    <button class="retry-btn" onclick="startGenerating()">🔄 別の献立を生成する</button>
+    <button class="btn-secondary" onclick="showScreen('home')">← 最初からやり直す</button>
   </div>
 </div>
 
 <script>
-  // 選択中の食材リスト
   let selectedIngredients = [];
+  let settings = { salt: '6g未満', time: '2時間以内', budget: '普通（5,000〜8,000円）' };
 
-  // 設定の状態
-  let settings = {
-    salt: '6g未満',
-    time: '2時間以内',
-    budget: '普通（5,000〜8,000円）'
-  };
-
-  // 画面切り替え
   function showScreen(id) {
     document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
     document.getElementById(id).classList.add('active');
     window.scrollTo(0, 0);
   }
 
-  // 食材の選択・解除
   function toggleIngredient(btn, name) {
     const idx = selectedIngredients.indexOf(name);
     if (idx > -1) {
@@ -461,7 +284,7 @@
       btn.classList.remove('selected');
     } else {
       if (selectedIngredients.length >= 3) {
-        alert('食材は3つまで選べます。\nすでに選んだものをタップして外してください。');
+        alert('食材は3つまで選べます。');
         return;
       }
       selectedIngredients.push(name);
@@ -470,45 +293,196 @@
     updateSelectedCount();
   }
 
-  // 選択数の更新
   function updateSelectedCount() {
     const count = selectedIngredients.length;
     const el = document.getElementById('selectedCount');
     const btn = document.getElementById('nextBtn');
-    if (count === 0) {
-      el.textContent = '食材を2〜3つ選んでください';
-      btn.disabled = true;
-    } else if (count === 1) {
-      el.textContent = `✅ ${selectedIngredients[0]} を選択中（あと1〜2つ選べます）`;
-      btn.disabled = true;
-    } else {
-      el.textContent = `✅ ${selectedIngredients.join('・')} を選択中`;
-      btn.disabled = false;
-    }
+    if (count === 0) { el.textContent = '食材を2〜3つ選んでください'; btn.disabled = true; }
+    else if (count === 1) { el.textContent = `✅ ${selectedIngredients[0]} を選択中（あと1〜2つ）`; btn.disabled = true; }
+    else { el.textContent = `✅ ${selectedIngredients.join('・')} を選択中`; btn.disabled = false; }
   }
 
-  // 条件の選択
   function selectOption(btn, category) {
-    const group = btn.closest('.option-grid');
-    group.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+    btn.closest('.option-grid').querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
     btn.classList.add('selected');
     settings[category] = btn.dataset.value;
   }
 
-  // 生成開始（まだAPIなし、3秒後にアラート）
+  // 献立データ生成（固定サンプル）
+  function generateMealPlan() {
+    const ing = selectedIngredients;
+    const days = ['月', '火', '水', '木', '金', '土', '日'];
+
+    // 食材に基づいたサンプル献立
+    const recipeMap = {
+      '鶏むね肉': ['鶏むね肉の塩こうじ蒸し', '鶏むね肉とブロッコリーのポン酢炒め', '鶏むね肉の梅しそ焼き'],
+      '鶏もも肉': ['鶏もも肉のハーブ焼き', '鶏もも肉と根菜の煮物', '鶏もも肉のトマト煮'],
+      '豚こま肉': ['豚こま肉と玉ねぎの生姜炒め', '豚こま肉のみそ汤', '豚こま肉と白菜の重ね蒸し'],
+      '豚ロース': ['豚ロースの大葉巻き焼き', '豚ロースとりんごのソテー', '豚ロースの柚子こしょう焼き'],
+      '牛薄切り': ['牛薄切りと野菜の炒め物', '牛しゃぶと水菜のサラダ', '牛薄切りとごぼうのきんぴら'],
+      '鮭': ['鮭の味噌ホイル焼き', '鮭とほうれん草のクリーム煮', '鮭の塩麹焼き'],
+      'さば缶': ['さば缶と大根の煮物', 'さば缶とトマトの和えもの', 'さば缶のみそ汁'],
+      'ツナ缶': ['ツナとキャベツの蒸し物', 'ツナと豆腐のサラダ', 'ツナとにんじんのきんぴら'],
+      'えび': ['えびと野菜の塩炒め', 'えびのガーリックソテー', 'えびと豆腐の蒸し物'],
+      '卵': ['卵と野菜の炒め物', '茶碗蒸し', 'だし巻き卵'],
+      '豆腐': ['豆腐の味噌汤', '豆腐ステーキ', '豆腐とわかめのスープ'],
+      '大豆': ['大豆と野菜の煮物', '大豆のトマト煮', '大豆とひじきの炒め煮'],
+      '納豆': ['納豆とオクラの和え物', '納豆汁', '納豆と山芋の丼'],
+      'ブロッコリー': ['ブロッコリーの胡麻和え', 'ブロッコリーのガーリック炒め'],
+      'キャベツ': ['キャベツの浅漬け', 'キャベツと豚肉の重ね蒸し'],
+      '玉ねぎ': ['玉ねぎと油揚げの味噌汤', '玉ねぎのスープ'],
+      'にんじん': ['にんじんのきんぴら', 'にんじんのグラッセ'],
+      'ほうれん草': ['ほうれん草の胡麻和え', 'ほうれん草のおひたし'],
+      'トマト': ['トマトとたまごのスープ', 'トマトの和えもの'],
+    };
+
+    // 朝食パターン
+    const breakfasts = [
+      { name: 'バナナ + アーモンド', note: '常温保存可' },
+      { name: 'りんご + ヨーグルト', note: '冷蔵' },
+      { name: 'バナナ + くるみ', note: '常温保存可' },
+      { name: 'キウイ + ナッツ', note: '常温保存可' },
+      { name: 'りんご + アーモンド', note: '常温保存可' },
+      { name: 'バナナ + カシューナッツ', note: '常温保存可' },
+      { name: 'グレープフルーツ + ヨーグルト', note: '冷蔵' },
+    ];
+
+    // 昼食パターン
+    const lunches = [
+      { name: '前日夜の作り置きアレンジ', note: '冷蔵から温め直す' },
+      { name: '雑穀ごはん + 作り置きおかず', note: '冷凍から解凍' },
+      { name: '前日夜の残りスープ + ごはん', note: '冷蔵から温め直す' },
+      { name: '作り置き弁当', note: '冷凍から解凍' },
+      { name: '前日夜の煮物 + ごはん', note: '冷蔵から温め直す' },
+      { name: '週末作り置きセット', note: '冷凍から解凍' },
+      { name: 'おにぎり + 作り置きサラダ', note: '冷蔵から取り出す' },
+    ];
+
+    // メイン食材からレシピを選ぶ
+    const mainRecipes = [];
+    ing.forEach(i => {
+      if (recipeMap[i]) mainRecipes.push(...recipeMap[i]);
+    });
+
+    // 副菜パターン
+    const sideDishes = [
+      { name: 'ほうれん草の胡麻和え', note: '塩分0.3g' },
+      { name: 'きゅうりの酢の物', note: '塩分0.4g' },
+      { name: 'にんじんのきんぴら', note: '塩分0.5g' },
+      { name: 'ブロッコリーのおひたし', note: '塩分0.2g' },
+      { name: 'わかめスープ', note: '塩分0.6g' },
+      { name: 'キャベツの浅漬け', note: '塩分0.4g' },
+      { name: '大根の味噌汤', note: '塩分0.7g' },
+    ];
+
+    const saltValues = ['1.2g', '1.4g', '1.1g', '1.5g', '1.3g', '1.6g', '1.2g'];
+
+    return days.map((day, i) => ({
+      day,
+      salt: saltValues[i],
+      breakfast: breakfasts[i],
+      lunch: lunches[i],
+      dinner: {
+        name: mainRecipes[i % mainRecipes.length] || '野菜たっぷり炒め',
+        note: '作り置き可・冷凍3週間',
+      },
+      side: sideDishes[i],
+    }));
+  }
+
+  // 買い物リスト生成
+  function generateShoppingList() {
+    const list = {
+      '🥩 肉・魚': [],
+      '🥦 野菜': ['玉ねぎ 3個', 'にんじん 2本', 'キャベツ 1/2個', 'ブロッコリー 1株'],
+      '🫙 調味料・乾物': ['塩麹', '出汁パック', '酢', 'ごま油'],
+      '🍌 常備食材': ['バナナ', 'りんご', 'アーモンド', 'くるみ'],
+    };
+
+    selectedIngredients.forEach(ing => {
+      if (['鶏むね肉','鶏もも肉','豚こま肉','豚ロース','牛薄切り'].includes(ing)) {
+        list['🥩 肉・魚'].push(ing + ' 400g');
+      } else if (['鮭','えび'].includes(ing)) {
+        list['🥩 肉・魚'].push(ing + ' 300g');
+      } else if (['さば缶','ツナ缶'].includes(ing)) {
+        list['🥩 肉・魚'].push(ing + ' 2〜3缶');
+      } else if (['豆腐','大豆','納豆','卵'].includes(ing)) {
+        list['🫙 調味料・乾物'].push(ing);
+      } else {
+        list['🥦 野菜'].push(ing);
+      }
+    });
+
+    return list;
+  }
+
   function startGenerating() {
     showScreen('generating');
     setTimeout(() => {
-      alert(
-        `📋 選択内容\n\n` +
-        `食材：${selectedIngredients.join('、')}\n` +
-        `塩分目標：${settings.salt}\n` +
-        `調理時間：${settings.time}\n` +
-        `予算：${settings.budget}\n\n` +
-        `次のステップでAIが献立を生成します！`
-      );
-      showScreen('settings');
-    }, 3000);
+      const plan = generateMealPlan();
+      const shopping = generateShoppingList();
+      displayResult(plan, shopping);
+    }, 2500);
+  }
+
+  function displayResult(plan, shopping) {
+    // サブタイトル
+    document.getElementById('resultSub').textContent =
+      `${selectedIngredients.join('・')} を中心に / 塩分目標${settings.salt} / ${settings.budget}`;
+
+    // 週間献立
+    const grid = document.getElementById('weekGrid');
+    grid.innerHTML = plan.map(day => `
+      <div class="day-card">
+        <div class="day-header">
+          <span class="day-name">${day.day}曜日</span>
+          <span class="day-salt">夕食 塩分 ${day.salt}</span>
+        </div>
+        <div class="meals">
+          <div class="meal-row">
+            <span class="meal-label">朝</span>
+            <div class="meal-content">
+              <div class="meal-name">${day.breakfast.name}</div>
+              <div class="meal-note">${day.breakfast.note}</div>
+            </div>
+          </div>
+          <div class="meal-row">
+            <span class="meal-label">昼</span>
+            <div class="meal-content">
+              <div class="meal-name">${day.lunch.name}</div>
+              <div class="meal-note">${day.lunch.note}</div>
+            </div>
+          </div>
+          <div class="meal-row">
+            <span class="meal-label">夜</span>
+            <div class="meal-content">
+              <div class="meal-name">${day.dinner.name}</div>
+              <div class="meal-note">${day.dinner.note}</div>
+            </div>
+          </div>
+          <div class="meal-row">
+            <span class="meal-label">副</span>
+            <div class="meal-content">
+              <div class="meal-name">${day.side.name}</div>
+              <div class="meal-note">${day.side.note}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `).join('');
+
+    // 買い物リスト
+    const shopEl = document.getElementById('shoppingList');
+    shopEl.innerHTML = Object.entries(shopping).map(([cat, items]) =>
+      items.length > 0 ? `
+        <div class="shopping-category">${cat}</div>
+        <div class="shopping-items">
+          ${items.map(i => `<span class="shopping-item">${i}</span>`).join('')}
+        </div>
+      ` : ''
+    ).join('');
+
+    showScreen('result');
   }
 </script>
 </body>
